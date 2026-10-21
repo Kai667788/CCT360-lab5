@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA Sound Diary - Kevin Wang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>GTA Sound Diary</h1>
+        <p>CCT360 - Lab 5: Interactive Media</p>
+        <p>By Kevin Wang</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Sounds Around My City</h2>
+            <p>
+                I live around the Greater Toronto Area. There are lots of sounds
+                that remind me of everyday life here, like cars, trains, and people
+                walking around. For this lab, I want to make a small soundscape
+                about those moments.
+            </p>
+        </section>
+
+        <section class="sound-section">
+            <h2>Sound 1: At the Station</h2>
+            <p>This is my first test for the sound and the interactive image.</p>
+
+            <div class="picture-box" id="pictureBox">
+                <img id="stationImage" src="images/station-draft.jpg"
+                     alt="Simple illustration of a train at a station">
+            </div>
+
+            <audio id="cityAudio" controls>
+                <source src="audio/station-demo.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+
+            <div class="buttons">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="stopBtn">Stop</button>
+            </div>
+
+            <p id="message">Click Play to hear the sample sound.</p>
+            <p class="small-note">This is just a demo sound for testing the page. I will replace it with a real recording later.</p>
+        </section>
+
+        <section class="next-section">
+            <h2>What I Will Add Next</h2>
+            <p>
+                I still need to collect more real sounds from the GTA, combine them
+                into a 60-90 second soundscape, and make the visual effects better.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kevin Wang | CCT360 Lab 5 | Work in Progress</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

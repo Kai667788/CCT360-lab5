@@ -1,0 +1,96 @@
+/* CCT360 Lab 5 - Kevin Wang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f5f7;
+    color: #253540;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #27485d;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 4px;
+}
+
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 24px;
+    padding: 25px;
+    border: 1px solid #d5e0e6;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #284a5f;
+}
+
+.picture-box {
+    border: 5px solid #c5d3dc;
+    background-color: #d6e7ee;
+    margin-top: 18px;
+}
+
+.picture-box img {
+    display: block;
+    width: 100%;
+    opacity: 0.65;
+    transition: opacity 0.5s;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+}
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2f627e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #20445b;
+}
+
+#message {
+    font-weight: bold;
+    color: #365b6e;
+}
+
+.small-note {
+    font-size: 13px;
+    color: #687a83;
+}
+
+footer {
+    padding: 12px;
+    text-align: center;
+    color: #6c7b83;
+}
