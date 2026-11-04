@@ -2,95 +2,113 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f1f5f7;
-    color: #253540;
+    background-color: #edf3f4;
+    color: #243847;
     line-height: 1.6;
 }
 
 header {
-    background-color: #27485d;
+    background-color: #24495e;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 30px 15px;
 }
 
 header h1 {
     margin: 0;
+    font-size: 36px;
 }
 
 header p {
-    margin: 4px;
+    margin: 5px;
+}
+
+.byline {
+    color: #d5e7ed;
+    font-size: 14px;
 }
 
 main {
-    max-width: 850px;
+    max-width: 860px;
     margin: 30px auto;
-    padding: 0 20px;
+    padding: 0 18px;
 }
 
 section {
     background-color: white;
-    margin-bottom: 24px;
-    padding: 25px;
-    border: 1px solid #d5e0e6;
+    border: 1px solid #d6e1e5;
     border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 24px;
 }
 
 h2 {
     margin-top: 0;
-    color: #284a5f;
+    color: #255268;
 }
 
 .picture-box {
-    border: 5px solid #c5d3dc;
-    background-color: #d6e7ee;
-    margin-top: 18px;
+    margin-top: 20px;
+    border: 5px solid #c5d7de;
+    background-color: #e3ecee;
 }
 
 .picture-box img {
     display: block;
     width: 100%;
-    opacity: 0.65;
+    opacity: 0.72;
     transition: opacity 0.5s;
+}
+
+.scene-name {
+    background-color: #24495e;
+    color: white;
+    padding: 12px;
+    margin: 0;
+    font-weight: bold;
 }
 
 audio {
     display: block;
     width: 100%;
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 .buttons {
     display: flex;
-    gap: 12px;
-    margin-top: 18px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 17px;
 }
 
 button {
-    padding: 10px 20px;
-    background-color: #2f627e;
-    border: none;
-    border-radius: 5px;
+    background-color: #2e6784;
     color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #20445b;
+    background-color: #1f4558;
 }
 
 #message {
     font-weight: bold;
-    color: #365b6e;
+    color: #2a617b;
 }
 
-.small-note {
-    font-size: 13px;
-    color: #687a83;
+#timeMessage, .small-note {
+    color: #60727a;
+    font-size: 14px;
 }
+
+li { margin-bottom: 7px; }
+a { color: #1b5e81; }
 
 footer {
-    padding: 12px;
     text-align: center;
-    color: #6c7b83;
+    color: #637680;
+    padding: 10px 15px 26px;
 }

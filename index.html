@@ -9,32 +9,31 @@
 <body>
     <header>
         <h1>GTA Sound Diary</h1>
-        <p>CCT360 - Lab 5: Interactive Media</p>
-        <p>By Kevin Wang</p>
+        <p>One everyday trip through the Greater Toronto Area</p>
+        <p class="byline">CCT360 Lab 5 | Kevin Wang</p>
     </header>
 
     <main>
-        <section class="intro">
-            <h2>Sounds Around My City</h2>
-            <p>
-                I live around the Greater Toronto Area. There are lots of sounds
-                that remind me of everyday life here, like cars, trains, and people
-                walking around. For this lab, I want to make a small soundscape
-                about those moments.
-            </p>
+        <section>
+            <h2>About My Soundscape</h2>
+            <p>I live in the Greater Toronto Area. When I think of daily life here,
+               I think of traffic, transit, and busy train stations. I made this
+               short sound diary to show how a normal trip can have different sounds.</p>
+            <p>The 80-second soundscape is an original, computer-made interpretation
+               of those sounds, not an actual field recording. The images are simple digital illustrations
+               made for this project.</p>
         </section>
 
-        <section class="sound-section">
-            <h2>Sound 1: At the Station</h2>
-            <p>This is my first test for the sound and the interactive image.</p>
-
+        <section class="player-section">
+            <h2>Listen to the City (1:20)</h2>
+            <p>Press Play, or use the audio controls. Watch the picture change as the sounds move to a new place.</p>
             <div class="picture-box" id="pictureBox">
-                <img id="stationImage" src="images/station-draft.jpg"
-                     alt="Simple illustration of a train at a station">
+                <img id="cityImage" src="images/street.jpg" alt="Illustration of a bus and city traffic">
+                <p id="sceneName" class="scene-name">1. Streets in the Morning</p>
             </div>
 
-            <audio id="cityAudio" controls>
-                <source src="audio/station-demo.mp3" type="audio/mpeg">
+            <audio id="cityAudio" controls preload="metadata">
+                <source src="audio/gta-soundscape.mp3" type="audio/mpeg">
                 Your browser does not support audio.
             </audio>
 
@@ -42,25 +41,42 @@
                 <button id="playBtn">Play</button>
                 <button id="pauseBtn">Pause</button>
                 <button id="stopBtn">Stop</button>
+                <button id="downBtn">Volume -</button>
+                <button id="upBtn">Volume +</button>
             </div>
-
-            <p id="message">Click Play to hear the sample sound.</p>
-            <p class="small-note">This is just a demo sound for testing the page. I will replace it with a real recording later.</p>
+            <p id="message">Click Play to start the soundscape.</p>
+            <p id="timeMessage">Time: 0 / 80 seconds</p>
         </section>
 
-        <section class="next-section">
-            <h2>What I Will Add Next</h2>
-            <p>
-                I still need to collect more real sounds from the GTA, combine them
-                into a 60-90 second soundscape, and make the visual effects better.
+        <section>
+            <h2>Three Parts of the Trip</h2>
+            <ul>
+                <li><strong>0–26 seconds:</strong> Early traffic and pedestrian crossing sounds.</li>
+                <li><strong>26–53 seconds:</strong> A subway ride with a low rumble and two-note chimes.</li>
+                <li><strong>53–80 seconds:</strong> A quieter train station with an approaching train sound.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Real Toronto Sound (Optional)</h2>
+            <p>This is a real recording of a GO train arriving at Guildwood GO Station.
+               It is different from my soundscape above. This second audio player
+               needs an internet connection.</p>
+            <audio controls preload="none">
+                <source src="https://upload.wikimedia.org/wikipedia/commons/5/55/GO_Train_arrives_at_Guildwood_GO_Station_%28Freesound%29.ogg" type="audio/ogg">
+                Your browser does not support this audio format.
+            </audio>
+            <p class="small-note">Recording by PascalHD, available under
+                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+                <a href="https://commons.wikimedia.org/wiki/File:GO_Train_arrives_at_Guildwood_GO_Station_(Freesound).ogg" target="_blank">Original file and credits</a>.
+                This recording was not edited for this site.
             </p>
         </section>
     </main>
 
     <footer>
-        <p>Kevin Wang | CCT360 Lab 5 | Work in Progress</p>
+        <p>Kevin Wang | CCT360 - Lab 5: Interactive Media</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
